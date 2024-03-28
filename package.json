@@ -1,0 +1,47 @@
+{
+  "name": "voluptatemaccusantium",
+  "version": "1.0.0",
+  "description": "A helpful logging package with types, formatting, stacks, and colors.",
+  "keywords": [
+    "log",
+    "voluptatibus",
+    "color",
+    "error",
+    "type",
+    "earum",
+    "stack"
+  ],
+  "main": "js/index",
+  "types": "dts/index",
+  "files": [
+    "js",
+    "dts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf js && rm -rf dts",
+    "start": "node js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeoffreyBreitenberg/voluptatemaccusantium.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "LilianaNolan",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest",
+    "tslint": "latest",
+    "jest": "latest",
+    "@types/jest": "latest"
+  }
+}
